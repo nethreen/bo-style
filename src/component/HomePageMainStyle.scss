@@ -1,0 +1,35 @@
+.homepage-main{
+    
+    .homepage-main-left{
+        position: relative;
+        height: 79.6rem;
+        background-color: #7899a0;
+
+        .main-leftimg{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50vw;
+            filter: saturate(0.5);
+            height: 79.6rem;
+            object-fit: cover;
+        }
+    }
+    .homepage-main-left-content{
+        width: 50vw;
+        padding: 34rem 0 0;
+        height: -webkit-fill-available;       
+
+        h4{
+            font-size: 10rem;
+            color: #fff;
+            position: absolute;
+            top: 4rem;
+            left: 20%;
+            z-index: 3;
+        }
+    }
+    .swiper-container {
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,272 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  padding: 0;
+  margin: 0;
+}
+
+body.overflow {
+  overflow: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+/*container */
+
+.container {
+    max-width: 112.8rem;
+    margin: 0 auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+
+@media screen and (max-width:1199.9px) {
+  html {
+      font-size: 9px;
+  }
+}
+
+@media screen and (max-width:1023.9px) {
+  html {
+      font-size: 8px;
+  }
+}
+
+@media screen and (max-width:991.9px) {
+  html {
+      font-size: 7px;
+  }
+
+}
+
+@media screen and (max-width:767.9px) {
+  html {
+      font-size: 10px;
+  }
+
+  .container {
+      max-width: 100% !important;
+      width: auto !important;
+      padding: 0 1.4rem !important;
+  }
+
+}
+
+
+/* GRID */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 2.4rem;
+}
+
+/* @media screen and (max-width:1399.9px) {
+
+  .container{
+      max-width: 100%;
+  }
+} */
+@media screen and (min-width:1199.9px) {
+
+  .xl-1 {
+      grid-column: span 1;
+  }
+
+  .xl-2 {
+      grid-column: span 2;
+  }
+
+  .xl-3 {
+      grid-column: span 3;
+  }
+
+  .xl-4 {
+      grid-column: span 4;
+  }
+
+  .xl-5 {
+      grid-column: span 5;
+  }
+
+  .xl-6 {
+      grid-column: span 6;
+  }
+
+  .xl-7 {
+      grid-column: span 7;
+  }
+
+  .xl-8 {
+      grid-column: span 8;
+  }
+
+  .xl-9 {
+      grid-column: span 9;
+  }
+
+  .xl-10 {
+      grid-column: span 10;
+  }
+
+  .xl-12 {
+      grid-column: span 12;
+  }
+
+}
+
+@media screen and (max-width:1199.9px) and (min-width:991.9px) {
+  .lg-2 {
+      grid-column: span 2;
+  }
+
+  .lg-3 {
+      grid-column: span 3;
+  }
+
+  .lg-4 {
+      grid-column: span 4;
+  }
+
+  .lg-5 {
+      grid-column: span 5;
+  }
+
+  .lg-6 {
+      grid-column: span 6;
+  }
+
+  .lg-7 {
+      grid-column: span 7;
+  }
+
+  .lg-8 {
+      grid-column: span 8;
+  }
+
+  .lg-10 {
+      grid-column: span 10;
+  }
+
+  .lg-12 {
+      grid-column: span 12;
+  }
+}
+
+@media screen and (max-width:991.9px) and (min-width:767.9px) {
+  .md-2 {
+      grid-column: span 2;
+  }
+
+  .md-3 {
+      grid-column: span 3;
+  }
+
+  .md-4 {
+      grid-column: span 4;
+  }
+
+  .md-6 {
+      grid-column: span 6;
+  }
+
+  .md-8 {
+      grid-column: span 8;
+  }
+
+  .md-10 {
+      grid-column: span 10;
+  }
+
+  .md-12 {
+      grid-column: span 12;
+  }
+}
+
+
+
+@media screen and (max-width:767.9px) {
+  .sm-0 {
+      display: none;
+  }
+
+  .sm-2 {
+      grid-column: span 2;
+  }
+
+  .sm-3 {
+      grid-column: span 3;
+  }
+
+  .sm-4 {
+      grid-column: span 4;
+  }
+
+  .sm-5 {
+      grid-column: span 5;
+  }
+
+  .sm-6 {
+      grid-column: span 6;
+  }
+
+  .sm-8 {
+      grid-column: span 8;
+  }
+
+  .sm-7 {
+      grid-column: span 7;
+  }
+
+  .sm-9 {
+      grid-column: span 9;
+  }
+
+  .sm-12 {
+      grid-column: span 12;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+/* input number hide arrow */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
