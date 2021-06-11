@@ -4,7 +4,7 @@
 
     .left-img {
         height: 79.6rem;
-        width: 50vw;
+        width: 60vw;
         position: absolute;
         left: 0;
         top: 0;
@@ -15,7 +15,7 @@
     .right-section {
         background-color: #C3D5D9;
         height: 79.6rem;
-        width: 50vw;
+        width: 40vw;
         position: absolute;
         right: 0;
         top: 0;
@@ -50,7 +50,7 @@
     }
 
     .menubutton {
-        position: absolute;
+        position: fixed;
         top: 2.4rem;
         left: 50%;
         transform: translateX(-50%);
@@ -90,5 +90,52 @@
         font-size: 1.6rem;
         border-radius: .3rem;
         font-weight: 500;
+    }
+
+
+
+    #menu {
+        position: fixed;
+        height: 100vh;
+        width: 30rem;
+        background-color: #C3D5D9;
+        transform: translateX(100%);
+        transition: transform 300ms;
+        z-index: 3;
+        right: 0;
+    }
+
+    #menu ul {
+        margin-top: 0px;
+        padding: 0px;
+        color: black;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    #menu li {
+        padding: 30px 0 20px 20px;
+        font-size: 1.5em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+    }
+
+    #menu li:last-child {
+        border-bottom: none;
+    }
+
+    .fa {
+        color: black;
+        padding-right: 8px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #menu.isopen {
+        transform: none;
+        box-shadow:-2rem 1.2rem 1.9rem -.4rem rgba(83,98,100,0.37);
+
     }
 }

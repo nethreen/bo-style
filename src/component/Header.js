@@ -3,14 +3,33 @@ import ImgLeft from "../img/bandana9.jpeg";
 // import Logo from '../img/bandana.svg'
 import  './HeaderStyle.scss';
 import {Link} from 'react-router-dom';
+import Menu from './Menu';
+
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          isOpen: false
+        }
+        this.menuToggle = this.menuToggle.bind(this);
+    }
+
+    menuToggle(e) {
+        e.stopPropagation();
+        this.setState({
+        isOpen: !this.state.isOpen
+        });
+        console.log("menuu")
+    }
     render() {
+        let menuStatus = this.state.isOpen ? 'isopen' : '';
+
         return (
             <div className="header">
                 <div className="left-section">
                     <img src={ImgLeft} className="left-img" alt="left img"/>
                 </div>
-                <div className="menubutton">
+                <div className="menubutton" onClick={ this.menuToggle }>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -20,7 +39,7 @@ class Header extends Component {
                     <h3>
                         Welcome To BoStyle
                     </h3>
-                    <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                    <svg id="Capa_1" enableBackground="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
                         xmlns="http://www.w3.org/2000/svg">
                         <g>
                             <path
@@ -36,9 +55,14 @@ class Header extends Component {
                         See Product
                     </Link>
                 </div>
+                <Menu menuStatus={ menuStatus }/>
             </div>
         )
     }
 }
 
 export default Header
+
+
+
+
